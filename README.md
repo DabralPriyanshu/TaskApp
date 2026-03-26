@@ -45,34 +45,37 @@ Note: Ensure your MONGODB_URI is correct, or the server will fail to start.
 If you prefer to set up the components individually:
 
 1. Backend Setup
-Bash
+   Bash
 
 cd backend
 npm install
+
 # Start development server
-npm run dev 
-2. Frontend Setup
+
+npm run dev 2. Frontend Setup
 Bash
 
 cd frontend
 npm install
+
 # Generate production build
+
 npm run build
 🏗 Project Architecture
 Plaintext
 
 TaskApp/
-├── backend/            # Express & Node.js Server
-│   ├── src/
-│   │   ├── server.js   # Entry point (Handles API & Static Files)
-│   │   ├── routes/     # Auth & Task API endpoints
-│   │   └── config/     # Database & Environment config
-│   └── .env            # Private Configuration
-├── frontend/           # React.js SPA
-│   ├── src/            # Components, Context, and Pages
-│   ├── dist/           # Compiled production files
-│   └── tailwind.config # Styling configuration
-└── package.json        # Root-level automation scripts
+├── backend/ # Express & Node.js Server
+│ ├── src/
+│ │ ├── server.js # Entry point (Handles API & Static Files)
+│ │ ├── routes/ # Auth & Task API endpoints
+│ │ └── config/ # Database & Environment config
+│ └── .env # Private Configuration
+├── frontend/ # React.js SPA
+│ ├── src/ # Components, Context, and Pages
+│ ├── dist/ # Compiled production files
+│ └── tailwind.config # Styling configuration
+└── package.json # Root-level automation scripts
 ✨ Key Features
 Secure Auth: JWT-based authentication with HTTP-only cookies.
 
@@ -92,3 +95,5 @@ Frontend: React 18+, Tailwind CSS v4, React Router 6, Axios.
 Backend: Node.js, Express.js, Path-to-Regexp.
 
 Database: MongoDB via Mongoose.
+
+Live link ->https://taskapp-1-004p.onrender.com/
