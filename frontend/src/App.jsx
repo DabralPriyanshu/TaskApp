@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Signup from "./pages/SIgnup";
+import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
 import { API } from "./config/axiosConfig";
 import { AuthContext } from "./context/AuthContext";
